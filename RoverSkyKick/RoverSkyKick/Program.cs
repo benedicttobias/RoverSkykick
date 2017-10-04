@@ -381,7 +381,7 @@ namespace RoverSkyKick {
 			// Loop to get a valid Plateau information
 			do {
 				// Read user input for plateau
-				Console.Write("Graph Upper right coordinate (X Y): ");
+				Console.Write("Graph Upper Right coordinate (X Y): ");
 				string XYinput = Console.ReadLine();
 
 				// Check user input
@@ -453,7 +453,7 @@ namespace RoverSkyKick {
 		// Print welcome message
 		private static void printWelcomeMessage() {
 			Console.Clear();
-			Console.WriteLine("-----------------------------------------------------------------------------------");
+			Console.WriteLine("--------------------------------------------------------------------------------------------");
 			Console.WriteLine("  Welcome to Rover Explorer!");
 			Console.WriteLine("");
 			Console.WriteLine("  This is an assignment from SkyKick for recruiting purposes.");
@@ -464,22 +464,23 @@ namespace RoverSkyKick {
 			Console.WriteLine("    I learnt a lot of things from this assignment.");
 			Console.WriteLine("");
 			Console.WriteLine("  Here are my assumptions:");
-			Console.WriteLine("    * Plateau is shared among Rovers");
-			Console.WriteLine("    * Rover cannot move to grid that is occupied");
-			Console.WriteLine("    * If Rover's start position is occupied, it will stay and not do anything");
-			Console.WriteLine("    * Any other grid coordinate outside maximum grid is assumed occupied");
-			Console.WriteLine("    * Rover amount -1 means the user exiting the program");
+			Console.WriteLine("    * Plateau is shared among Rovers.");
+			Console.WriteLine("    * Rover cannot move to grid that is occupied.");
+			Console.WriteLine("    * If Rover's start position is occupied, it will stay and not do anything.");
+			Console.WriteLine("    * Any other grid coordinate outside maximum grid is assumed occupied.");
+			Console.WriteLine("    * Rover amount -1 means the user exiting the program.");
 			Console.WriteLine("    * Grid size is limited to 1000x1000. I care about your RAM. :D");
+			Console.WriteLine("    * If movement command is not recognized, it will disregard that and moved on.");
 			Console.WriteLine("");
 			Console.WriteLine("  Key notes:");
-			Console.WriteLine("    * Program designed so it can handle more than two rovers");
-			Console.WriteLine("    * Program designed so it is east to expand if we decided to have more Plateau");
-			Console.WriteLine("    * Program designed so it expandable if we decided to have more specific directions");
+			Console.WriteLine("    * Program designed so it can handle more than two rovers.");
+			Console.WriteLine("    * Program designed so it is east to expand if we decided to have more Plateau.");
+			Console.WriteLine("    * Program designed so it expandable if we decided to have more specific directions.");
 			Console.WriteLine("");
 			Console.WriteLine("  Programmer : Benedict Tobias");
 			Console.WriteLine("  Email      : benedict.tobias@gmail.com");
 			Console.WriteLine("  Date       : 10/4/2017");
-			Console.WriteLine("-----------------------------------------------------------------------------------");
+			Console.WriteLine("--------------------------------------------------------------------------------------------");
 			Console.WriteLine("");
 		}
 
