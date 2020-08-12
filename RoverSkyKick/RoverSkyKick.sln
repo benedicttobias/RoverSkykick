@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoverSkyKick", "RoverSkyKick\RoverSkyKick.csproj", "{CAB4826F-FBE1-4AC8-B6E1-F1CCF1F3A3D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecondAttempt", "SecondAttempt", "{5E71BE2A-70D1-49C6-918E-22E7523D3089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rover2", "Rover2\Rover2.csproj", "{EE48DF94-7E11-4C3F-A54B-756AA356BA97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,18 @@ Global
 		{CAB4826F-FBE1-4AC8-B6E1-F1CCF1F3A3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAB4826F-FBE1-4AC8-B6E1-F1CCF1F3A3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAB4826F-FBE1-4AC8-B6E1-F1CCF1F3A3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE48DF94-7E11-4C3F-A54B-756AA356BA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE48DF94-7E11-4C3F-A54B-756AA356BA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE48DF94-7E11-4C3F-A54B-756AA356BA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE48DF94-7E11-4C3F-A54B-756AA356BA97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE48DF94-7E11-4C3F-A54B-756AA356BA97} = {5E71BE2A-70D1-49C6-918E-22E7523D3089}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {772B9FC1-B0C0-48F7-B414-FBBA36ED7490}
 	EndGlobalSection
 EndGlobal
