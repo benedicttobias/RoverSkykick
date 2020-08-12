@@ -5,12 +5,13 @@ namespace Rover2
     public class Commander
     {
         private Rover Rover { get; }
-        
+        private Plateau Plateau { get; }
         private char[] Commands { get; }
 
-        public Commander(Rover rover, string commands)
+        public Commander(Rover rover, Plateau plateau, string commands)
         {
             Rover = rover;
+            Plateau = plateau;
             Commands = commands.ToCharArray();
         }
 
@@ -30,12 +31,55 @@ namespace Rover2
 
         private void executeMovement(Movement movement)
         {
-            throw new NotImplementedException();
+            switch (movement)
+            {
+                case Movement.MoveForward:
+                    moveForward();
+                    break;
+            }
+        }
+
+        private void moveForward()
+        {
+            if (Rover.Direction == Direction.North)
+            {
+                if (Rover.Y + 1 <= Plateau.MaxHeightIndex)
+                {
+                    Rover.Y++;
+                }
+            }
+
+            if (Rover.Direction == Direction.East)
+            {
+                if (Rover.X + 1 <= Plateau.MaxWidthIndex)
+                {
+                    Rover.X++;
+                }
+            }
+
+            if (Rover.Direction == Direction.South)
+            {
+                if (Rover.Y - 1 >= 0)
+                {
+                    Rover.Y--;
+                }
+            }
+
+            if (Rover.Direction == Direction.West)
+            {
+                if (Rover.X - 1 >= 0)
+                {
+                    Rover.X--;
+                }
+            }
         }
 
         private void changeDirection(Direction direction)
         {
-            throw new NotImplementedException();
+            if (Rover.Direction == Direction.North)
+            {
+                if ()
+            }
         }
     }
 }

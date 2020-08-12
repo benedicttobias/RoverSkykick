@@ -8,6 +8,10 @@ namespace Rover2
 
         private int Width { get;set; }
 
+        public int MaxHeightIndex => Height - 1;
+
+        public int MaxWidthIndex => Width - 1;
+
         private Coordinate[,] Coordinate { get; }
 
         public Plateau(int height, int width)
